@@ -41,7 +41,7 @@ Airbnb Clone is the main project of the second trimester at Holberton School. Th
   - Follow the instructions to get a copy of the program and run in your local machine:
 
     Clone the following repository.
-    `https://github.com/HibeeK/AirBnB_clone.git`
+    `https://github.com/SaraYamil/AirBnB_clone.git`
 
     Run the program
     `./console.py`
@@ -76,5 +76,5 @@ You need to install this software
 ```
 
 ## Authors
-* Ibukun Akintola
-* Asuwe Richard Wuese
+* Sara Yamil
+* Fatima Zahra Lamrani
