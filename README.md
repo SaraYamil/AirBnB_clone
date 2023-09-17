@@ -1,13 +1,8 @@
-<p align="center">
-  <img src="https://github.com/4bd3ss4m4d/AirBnB_clone/blob/main/media/airbnb_project.png" alt="hbnb logo">
-</p>
+AirBnB clone - The console
 
-<h1 align="center">AirBnB Clone - Command Line Interface (CLI)</h1>
-<p align="center">ALX</p>
+##description of the Project
 
-## Description of the Project
-
-Welcome to our AirBnB Clone project! This is the initial step towards creating a full-fledged web application inspired by the renowned Airbnb platform. In this project, we've developed a powerful Command Line Interface (CLI) to manage AirBnB objects efficiently.
+Greetings and welcome to our AirBnB Clone project! This marks the inception of our journey towards crafting a comprehensive web application inspired by the esteemed Airbnb platform. Within this project, we've crafted a robust Command Line Interface (CLI) to adeptly handle AirBnB objects.
 
 ### Command Line Interface (CLI) - Bridging Vision and Execution
 

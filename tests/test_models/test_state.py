@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Contains the TestStateDocs classes
+define the TestStateDocs classes
 """
 
 from datetime import datetime
@@ -14,7 +14,7 @@ STATE = state.State
 
 
 class TestStateDocs(unittest.TestCase):
-    """Tests to check the documentation and style of State class"""
+    """ checks the documentation and style of State class"""
     @classmethod
     def set_up_class(cls):
         """Set up for the doc tests"""

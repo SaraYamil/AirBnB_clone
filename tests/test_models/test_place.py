@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Contains the TestPlaceClasses classes
+define the TestPlaceClasses
 """
 
 from datetime import datetime
@@ -13,14 +13,14 @@ Place = place.Place
 
 
 class TestPlaceDocs(unittest.TestCase):
-    """Tests for the documentation and style of the Place class"""
+    """Testing the documentation and style of the Place class"""
     @classmethod
     def set_up_class(cls):
         """Set up for the doc tests"""
         cls.place_f = inspect.getmembers(Place, inspect.isfunction)
 
     def test_place_function_docstrings(self):
-        """Test for the presence of docstrings in Place methods"""
+        """Testing the presence of docstrings in Place methods"""
         for function in self.place_f:
             self.assertIsNot(function[1].__doc__, None,
                              "{:s} method needs a docstring".format(function[0]))
@@ -28,14 +28,14 @@ class TestPlaceDocs(unittest.TestCase):
                             "{:s} method needs a docstring".format(function[0]))
             
     def test_place_module_docstring(self):
-        """Test for the place.py module docstring"""
+        """Testing the place.py module docstring"""
         self.assertIsNot(place.__doc__, None,
                          "place.py needs a docstring")
         self.assertTrue(len(place.__doc__) >= 1,
                         "place.py needs a docstring")
 
     def test_place_class_docstring(self):
-        """Test for the Place class docstring"""
+        """Testing the Place class docstring"""
         self.assertIsNot(Place.__doc__, None,
                          "Place class needs a docstring")
         self.assertTrue(len(Place.__doc__) >= 1,
@@ -43,7 +43,7 @@ class TestPlaceDocs(unittest.TestCase):
 
 
 class TestPlaceAttributes(unittest.TestCase):
-    """Tests for attributes of the Place class"""
+    """Testing the attributes of the Place class"""
 
     def test_name_attribute_exists(self):
         """Test Place has the 'name' attribute, and it's an empty string"""

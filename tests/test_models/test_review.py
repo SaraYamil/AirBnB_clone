@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Contains the TestReviewClasses classes
+define the TestReview Classes
 """
 
 import os
@@ -12,7 +12,7 @@ from models.review import Review
 
 
 class TestReviewInstantiation(unittest.TestCase):
-    """Unittests for testing instantiation of the Review class."""
+    """Unittests for instantiation of the Review class."""
 
     def test_instantiates_with_no_args(self):
         self.assertEqual(Review, type(Review()))

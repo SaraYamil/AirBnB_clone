@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Review Module"""
+""" define the review Module"""
 
 from models.base_model import BaseModel
 
@@ -10,8 +10,8 @@ class Review(BaseModel):
     Review class
 
     Attributes:
-        place_id (str): Place id
-        user_id (str): User id
+        place_id (str): id of Place
+        user_id (str): id of user
         text (str): Review text
 
     Methods:

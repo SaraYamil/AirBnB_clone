@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""Unit tests for models/base_model.py."""
+""" defines unit tests for models/base_model.py."""
 
 import os
 import models
@@ -11,7 +11,7 @@ from models.base_model import BaseModel
 
 
 class TestBaseModelInstantiation(unittest.TestCase):
-    """Tests for instantiation of the BaseModel class."""
+    """Testing instantiation of the BaseModel class."""
 
     def test_no_args_instantiates(self):
         self.assertEqual(BaseModel, type(BaseModel()))
@@ -32,7 +32,7 @@ class TestBaseModelInstantiation(unittest.TestCase):
         self.assertIn(BaseModel(), models.storage.all().values())
 
 class TestBaseModelToDict(unittest.TestCase):
-    """Tests for the to_dict method of the BaseModel class."""
+    """Testing the to_dict method of the BaseModel class."""
 
     def test_to_dict_type(self):
         bm = BaseModel()
@@ -52,7 +52,7 @@ class TestBaseModelToDict(unittest.TestCase):
 
 
 class TestBaseModelSave(unittest.TestCase):
-    """Tests for the save method of the BaseModel class."""
+    """Testing the save method of the BaseModel class."""
 
     @classmethod
     def set_up_class(cls):

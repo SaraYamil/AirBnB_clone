@@ -1,20 +1,18 @@
 #!/usr/bin/python3
 
-"""City Module"""
+""" deine the City Module"""
 
 from models.base_model import BaseModel
 
 
 class City(BaseModel):
     """
-    City class
+    represent City class
 
     Attributes:
         state_id (str): State id
-        name (str): City name
+        name (str): name of city
 
-    Methods:
-        __init__: Constructor of the City class
     """
     state_id = ""
     name = ""

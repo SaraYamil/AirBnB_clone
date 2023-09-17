@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""User class module"""
+"""define User class module"""
 
 from models.base_model import BaseModel
 
@@ -10,10 +10,10 @@ class User(BaseModel):
     User class
 
     Attributes:
-        email (str): email address of the user
-        password (str): password of the user
-        first_name (str): first name of the user
-        last_name (str): last name of the user
+        email (str): users email address
+        password (str): users password
+        first_name (str): user first name
+        last_name (str): user last name
 
     Methods:
         __init__(*args, **kwargs): initializes a User instance

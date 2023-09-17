@@ -1,19 +1,19 @@
 #!/usr/bin/python3
 
-"""Place Module"""
+"""define place Module"""
 
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
     """
-    Place class
+    represent place class
 
     Attributes:
-        city_id (str): City id
-        user_id (str): User id
-        name (str): Place name
-        description (str): Place description
+        city_id (str): id of City 
+        user_id (str): is of User 
+        name (str): name of place
+        description (str): description of place
         number_rooms (int): Number of rooms
         number_bathrooms (int): Number of bathrooms
         max_guest (int): Maximum number of guests

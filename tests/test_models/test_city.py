@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Contains the TestCityClasses classes
+defines the TestCity Classes
 """
 
 from datetime import datetime
@@ -13,7 +13,7 @@ from models.city import City
 
 
 class TestCityInstantiation(unittest.TestCase):
-    """Tests for instantiating the City class"""
+    """Testing instantiating the City class"""
 
     def test_instantiates_with_no_args(self):
         self.assertEqual(City, type(City()))
