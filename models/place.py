@@ -1,23 +1,26 @@
 #!/usr/bin/python3
-"""Contains the Place model"""
+
+"""Place Module"""
+
 from models.base_model import BaseModel
 
 
 class Place(BaseModel):
     """
-    Implements the Place model
-    Args:
-        city_id (str): The City id.
-        user_id (str): The User id.
-        name (str): The name of the place.
-        description (str): The description of the place.
-        number_rooms (int): The number of rooms of the place.
-        number_bathrooms (int): The number of bathrooms of the place.
-        max_guest (int): The maximum number of guests of the place.
-        price_by_night (int): The price by night of the place.
-        latitude (float): The latitude of the place.
-        longitude (float): The longitude of the place.
-        amenity_ids (list): A list of Amenity ids.
+    Place class
+
+    Attributes:
+        city_id (str): City id
+        user_id (str): User id
+        name (str): Place name
+        description (str): Place description
+        number_rooms (int): Number of rooms
+        number_bathrooms (int): Number of bathrooms
+        max_guest (int): Maximum number of guests
+        price_by_night (int): Price by night
+        latitude (float): Latitude
+        longitude (float): Longitude
+        amenity_ids (list): List of Amenity ids
     """
     city_id = ""
     user_id = ""
@@ -30,3 +33,7 @@ class Place(BaseModel):
     latitude = 0.0
     longitude = 0.0
     amenity_ids = []
+
+    def __init__(self, *args, **kwargs):
+        """Initializes a Place instance"""
+        super().__init__(*args, **kwargs)

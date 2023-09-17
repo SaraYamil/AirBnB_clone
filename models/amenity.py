@@ -1,8 +1,22 @@
 #!/usr/bin/python3
-"""Contains the Amenity model"""
+
+"""Amenity Module"""
+
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
-    """Implements the Amenity model"""
+    """
+    Amenity class
+
+    Attributes:
+        name (str): Amenity name
+
+    Methods:
+        __init__: Constructor of the Amenity class
+    """
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        """Initializes an Amenity instance"""
+        super().__init__(*args, **kwargs)

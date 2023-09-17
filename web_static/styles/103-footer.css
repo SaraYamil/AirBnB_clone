@@ -1,10 +1,9 @@
-footer{
-    height: 60px; width: 100%;
-    background: white;
-    border-top: 1px solid #CCCCCC;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center
+footer {
+  align-items: center;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 100%;
 }

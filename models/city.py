@@ -1,9 +1,24 @@
 #!/usr/bin/python3
-"""Contains the City model"""
+
+"""City Module"""
+
 from models.base_model import BaseModel
 
 
 class City(BaseModel):
-    """Implements the City class"""
+    """
+    City class
+
+    Attributes:
+        state_id (str): State id
+        name (str): City name
+
+    Methods:
+        __init__: Constructor of the City class
+    """
     state_id = ""
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        """Initializes a City instance"""
+        super().__init__(*args, **kwargs)
