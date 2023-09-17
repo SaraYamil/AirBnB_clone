@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""AirBnB Clone - Command Line Interface (CLI) Module"""
+"""airbnb clon  - ndiro liha bhal comande line module"""
 
 import cmd
 from models.base_model import BaseModel
@@ -16,7 +16,7 @@ import shlex
 
 
 class HBNBCommand(cmd.Cmd):
-    """ Holberton command prompt to access models data """
+    """ Holberton command prompt bach ndkhlo lmdl data """
     prompt = '(hbnb) '
     class_names = {
         "BaseModel": BaseModel,
@@ -30,9 +30,9 @@ class HBNBCommand(cmd.Cmd):
 
     def default(self, arg):
         """
-        Called on an input line when the command prefix is not recognized.
-        If this method is not overridden, it prints an error message and
-        returns.
+        dddd,,,,,,,,,,,,, dkkkkkkkkkk dkdk k dk,odld,koldlkd,k,do,lkkddddd
+        ddddddddddddddddddddd ,dddddddddddddddddddddd dddddddddddddddddd
+        returdd.
         """
         methods_dict = {
             "all": self.do_all,
@@ -71,22 +71,22 @@ class HBNBCommand(cmd.Cmd):
 
     def do_quit(self, arg):
         """
-        Quit command to exit the program
+        dddddddddddddddddddddddddddddddd
 
-        Usage: quit
+        ddddddddddd
 
-        Return:
-            True
+        vvvvvvv
+            vvve
         """
         return True
 
     def do_EOF(self, arg):
         """
-        EOF command to exit the program when the user inputs EOF (Ctrl+D)
+        ddddddd ddddddddddd ddddddddddd dddddddddd dddddddddd ddddddddddd
 
-        Usage: EOF or CTRL+D
+        ddddddddddddd CTRL+D
 
-        Return:
+        ccccccc
             True
         """
         print("")
@@ -94,32 +94,32 @@ class HBNBCommand(cmd.Cmd):
 
     def emptyline(self):
         """
-        Called when an empty line is entered in response to the prompt.
+        vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv.
 
-        If this method is not overridden, it repeats the last nonempty
-        command entered.
+        vvvvvvvvvvvvvvvvvvvvvvvvvvv vvvvvvvvvvvvvv vvvvvvvvv vvvvvvvty
+        combbbbbbbbbbed.
 
-        Return:
-            None
+        vvvvvvv
+            nnnn
         """
         pass
 
     def do_nothing(self, arg):
-        """ Does nothing """
+        """ vvvvvvvthing """
         pass
 
     def do_create(self, arg):
         """
-        Creates a new instance of BaseModel, saves it (to the JSON file)
-        and prints the id
+        bbbbbbbbbb bbbbbbbbbbbbb bbbbbbbbbbb bbbbbbbbbb bbbbbbbbbbbbbbb)
+        bbbbbbbbbbbbbbbbb
 
-        Usage: create <class name>
+        Usage: bbbbbe <class name>
 
         Args:
-            arg (str): class name of the instance to create
+            arg (strbbbbbbbbbbbbbbbbbbbbbbbbbbbbe to create
 
         Return:
-            None
+            walo
         """
         if not arg:
             print("** class name missing **")
@@ -134,16 +134,16 @@ class HBNBCommand(cmd.Cmd):
 
     def do_show(self, arg):
         """
-        Prints the string representation of an instance based on the class
-        name and id
+        Pccccccc ccccccccccepresccccccc ccccccc cccc ccccc cccccccc cccccs
+        xxxxx xxxid
 
-        Usage: show <class name> <id>
+        Usage: wwwwwwwwwwwwwwwwwwwwww
 
         Args:
-            arg (str): class name and id of the instance to show
+            wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwxxxxxxxxxxxxxxxxxxxxw
 
         Return:
-            None
+            walo
         """
         command_args = shlex.split(arg)
         if len(command_args) == 0:
@@ -165,16 +165,16 @@ class HBNBCommand(cmd.Cmd):
 
     def do_destroy(self, arg):
         """
-        Deletes an instance based on the class name and id (save the change
-        into the JSON file)
+        ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe
+        ffffffffffffffffff)
 
-        Usage: destroy <class name> <id>
+        fffffffffffffffffffffffffffffff>
 
         Args:
-            arg (str): class name and id of the instance to destroy
+            argffffffffffffffffffffffffffffffffffv ffffffffffffffff
 
         Return:
-            None
+            walo
         """
         command_args = shlex.split(arg)
         if len(command_args) == 0:
@@ -196,13 +196,13 @@ class HBNBCommand(cmd.Cmd):
 
     def do_all(self, arg):
         """
-        Prints all string representation of all instances based or not on the
-        class name
+        dddddddddddd ddddddddddd ddddddddddd ddddddddddddd dddddddddd ddd ddd
+        cccccccccc
 
-        Usage: all <class name> or all
+        Usage: ccccccccccccccccccccccc
 
         Args:
-            arg (str): class name of the instance to show or nothing
+            cccccccccccccccccccccccccccccccccccccccccccccccccccccing
         """
         json_data = []
         inst_dicts = storage.all()
@@ -222,8 +222,8 @@ class HBNBCommand(cmd.Cmd):
 
     def do_update(self, arg):
         """
-        Updates an instance based on the class name and id by adding or
-        updating attribute (save the change into the JSON file)
+        ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
         Usage: update <class name> <id> <attribute name> "<attribute value>"
 
@@ -264,8 +264,8 @@ class HBNBCommand(cmd.Cmd):
 
     def do_update_using_class(self, arg):
         """
-        Updates an instance based on the class name and id by adding or
-        updating attribute (save the change into the JSON file)
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxx xxxxxxxxxxxxx
+        wwwwwwwwwwww wwwwwwwwwwwwwwwwwww wwwwwwwwwwwwwwww wwwww
         """
         if not arg:
             print("** class name missing **")
@@ -302,7 +302,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_count(self, arg):
         """
-        Retrieve the number of instances of a class
+        cccccccccccccccccccccccccccccc ccccccccccss
 
         Usage: <class name>.count()
 
