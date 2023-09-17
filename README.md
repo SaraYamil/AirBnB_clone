@@ -1,6 +1,7 @@
-AirBnB clone - The console
+# AirBnB clone - The console
+ <img src="img/hbnb_screenshot.png" alt="cover" />
 
-##description of the Project
+## Description of the Project
 
 Greetings and welcome to our AirBnB Clone project! This marks the inception of our journey towards crafting a comprehensive web application inspired by the esteemed Airbnb platform. Within this project, we've crafted a robust Command Line Interface (CLI) to adeptly handle AirBnB objects.
 
